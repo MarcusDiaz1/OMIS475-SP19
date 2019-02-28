@@ -1,0 +1,33 @@
+header, main, nav, footer, section, article, figure, figcaption, aside  {display: block;}
+
+body {  font-family: Arial, Verdana, sans-serif;}
+
+
+#head {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 0;}
+
+
+#container { 
+       margin: auto;
+       background-color: #ffffff;
+       width: 800px;
+       padding: 20px;
+       box-shadow: 5px 5px 5px #1e1e1e;
+       background-image: linear-gradient(to bottom, #FFFFFF, rgba(6, 20, 87, 0.541));}  
+
+
+figure  {
+        width: 640px;
+        padding: 5px;}
+
+
+figcaption {  
+        text-align: auto;
+        font-family: papyrus, fantasy;}
+
+
+footer{
+        text-align: center;}
