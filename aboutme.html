@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About Myself</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="colors.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume</a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Myself</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact Me</a>
+  </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:50px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">NIU</h1>
+      <p>Northern Illinois University graduate, class of Spring 2019. I am receiving my Bachelor of Science in Operation Management and Information Systems with an emphasis in the Information Systems side. I am also minoring in Data Analytics and receiving two certifications, SAS Joint Certificate Program and Enterprise Management Using SAP Software. I enjoyed my time at NIU and learning about all the approaches to data analytics.</p>
+      <p><a href="classes.html" target="_blank">Previous Classes Taken</a></p>
+    </div>
+    <div class="w3-third w3-container">
+     <img src="niu.jpg" alt="NIU" width="340px" height="240px"></p>
+<!--Extra Element-->
+     <center><figcaption> Barsema Hall, Northern Illinois</figcaption></center>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Family</h1>
+      <p>My family is very important to me because without their love, support, and consistent encouragement, I would not be where I am today. I am the youngest of three boys in my family and we all remain very close. Both my brothers and my dad have served in the military, so they have become great roles models in my life. </p>
+    </div>
+    <div class="w3-third w3-container">
+        <img src="family.jpg" alt="My Family" width="340px" height="240px"></p>
+  <!--Extra Element-->
+        <center><figcaption> My family </figcaption></center>
+    </div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Goals</h1>
+      <p>My goal in life is to establish myself in well-paying job (anything above $100,000), in a career that I enjoy going to every single day of my life. I would love to travel throughout my life, hopefully to other countries and experience all the different cultures the world has to offer. Eventually I would like to retire on a nice beach house on the coast of Florida.  </p>
+    </div>
+    <div class="w3-third w3-container">
+  <!--Extra Element-->
+        <img src="beach.jpg" alt="NIU" width="340px" height="240px"></p>
+        <center><figcaption> Relaxing house on the beach </figcaption></center>
+    </div>
+  </div>
+</div>
+</body>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
+
+</html>

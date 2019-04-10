@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Sports</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="colors.css">
+<style>
+
+html {
+    background-image: url(sport.jpg);
+    background-repeat: no-repeat;
+    background-position: auto;
+    background-size: 1300px 650px;
+}
+
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif, sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 200px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+
+/* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight:bold;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume</a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Myself</a>
+    <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hobbies</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact Me</a>
+  </div>
+</div>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+<div class="position">
+ <div  class="column">
+    <div class="column-padding w3-container">
+      <h1 class="w3-text-teal">Baseball</h1>
+      <p>I have played baseball since I was 8 years old. It all started because my oldest brothers would have wiffle ball tournaments in our backyard with everyone around the neighborhood. I would be the youngest kid out there hitting homeruns on top of our neighbors houses and then I would have to jump the fence and go get it. As I got older, I played on multiple travel teams until I reached high school where I then played all 4 years. My main position was a starting pitcher, but I also liked to play first and third base. </p>
+    </div>
+  </div>
+
+  <div  class="column">
+    <div class="column-padding w3-container">
+      <h1 class="w3-text-teal">Bowling</h1>
+      <p>Bowling has been a family tradition long before I was born. My dad has been bowling for the last 25 years and has passed the love of the sport to me. I joined my first bowling league when I was around 8 years old and bowled every year until high school, where I then focused all my attention on baseball. After I graduated from high school, I got back into bowling and joined a league with my dad and brothers where I still bowl now.</p>
+    </div>
+  </div>
+
+  <div  class="column">
+    <div class="column-padding w3-container">
+      <h1 class="w3-text-teal">Basketball</h1>
+      <p>Basketball has grown to become one of my favorite sports because it is a fun way to do some cardio and a great stress relief. I am currently the captain of a men’s basketball league at my church in Naperville and I also love to play basketball at the gym with friends. I started playing basketball when I was a little kid at the YMCA and eventually phased out of it. As I have gotten older, I have grown to love the sport again.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
+</body>
+</html>

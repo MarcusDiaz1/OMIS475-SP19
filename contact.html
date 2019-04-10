@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Contact Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="colors.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif}
+.column {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.banner { padding-top: 40px;}
+
+form {
+border: medium solid black;
+
+}
+</style>
+<head>
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+      <a href="home.html" class="w3-bar-item w3-button w3-theme-l1">Home</a>
+      <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Resume</a>
+      <a href="projects.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+      <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About Myself</a>
+      <a href="hobbies.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Hobbies</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact Me</a>
+    </div>
+  </div>
+</head>
+
+<body id="fragment">
+<section class="banner">
+   <center><img src="banner.png" alt="Smiley face" height="175" width=75%></center>
+</section>
+
+<div class="form-left">
+  <div class="w3-row w3-padding-64 column-padding column padding-left">
+      <form action="/action_page.php" style="padding: 15px;">
+        First name:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="">
+        <br>
+        E-mail: 
+        <br>
+        <input type="text" name="email" id="email" required="required">
+        <br>
+        Comments:<br>
+        <textarea name="comments" id="comments" cols="50" rows="8" maxlength="1600" required="required"> Enter your comments here</textarea>
+        <br><br><input type="submit" value="Submit">
+      </form> 
+  </div>
+
+  <div class="w3-row  column-padding column padding-left">
+    <div class="w3-container ">
+      <a href="travel.html" class="hobby-heading" >Send me a message</h1></a>
+      <p>If you want to write me a brief message, please send me an <a href="mailto: marcus.diaz1994@gmail.com" target="_blank">email</a>, fill out the form provided, or visit my LinkedIn and Facebook page.</p>
+<br>
+  <!-- Extra Element-->
+      <a href="https://www.linkedin.com/in/marcus-diaz-29901714a/" target="_blank">
+          <img src="linkedin.png" alt="linkedin" style="width: 40px; height: 40px;">
+      </a>
+
+      <a href="https://www.facebook.com/marcus.diaz.56" target="_blank">
+        <img src="facebook.png" alt="Facebook" style="width: 60px; height: 40px; padding-left: 20px;">
+    </a>
+    </div>
+  </div>
+  <p style="padding: 20px;"> Please fill out my <a href="survey.html" target="_blank"> survey</a> to help me improve my Web Page!
+      
+  </p>
+</div>
+</body>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
+</html>

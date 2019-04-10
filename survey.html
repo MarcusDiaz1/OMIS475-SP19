@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Survey</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="music.css">
+</head>
+
+<style>
+.survey { 
+    border: solid black;
+    width: 550px;
+    height: 700px;
+    padding: 10px;
+    margin: auto;
+}
+
+header {
+    font-size: 100px;
+    padding: 30px;
+}
+</style>
+
+<center><header> Survey</header></center>
+
+<body>
+<div class="survey">
+    <center><h1>Help Me Improve My Web Page</h1></center>
+    <form method="GET">
+   <strong> Name: <input type="text" name="name" id="name" required="required"></strong>
+    <br>
+    <br>
+    <strong>E-mail: <input type="email" name="email" id="email" required="required"></strong>
+    <br>
+    <br>
+<!-- Extra Element-->
+    <fieldset><legend><strong> How Do You Know Me:</strong></legend>
+        <input type="radio" name="Weekly" id="Weekly" value="Yes"> Friend
+        <br>
+        <input type="radio" name="A few CDs each year" id="few" value="Yes"> Family
+        <br>
+        <input type="radio" name="Monthly" id="Monthly" value="Yes"> Co-Worker
+        <br>
+        <input type="radio" name="Never purchase" id="Never" value="Yes"> Student
+        <br>
+        <input type="radio" name="Never purchase" id="Never" value="Yes"> Anonymous
+    </fieldset>
+    <br>
+    <fieldset id="type"><legend><strong> How Can I Improve My Web Page:</strong></legend>
+        <input type="checkbox" name="Pop" id="Pop" value="Yes"> Change interface layout
+         <br>
+         <input type="checkbox" name="Classical" id="CSL" value="Yes"> Change font colors/size
+         <br>
+         <input type="checkbox" name="Rock" id="Rock" value="Yes"> Change styles
+         <br>
+         <input type="checkbox" name="Folk" id="Folk" value="Yes"> Change page format
+         <br>
+         <input type="checkbox" name="Rap" id="Rap" value="Yes"> Change backgrount colors/images
+     </fieldset>
+     <br>
+    <fieldset><legend><strong>Select the best option in your opinion:</strong></legend>
+        <select size="3" name="location" id="location">
+            <option>Add more hobbies</option>
+            <option>Add more projects</option>
+            <option>Add more about myself</option>
+            <option>Add more pictures</option>
+            <option>Add more descriptions</option>
+            <option>Add more borders</option>
+            <option>Add more links</option>
+        </select>
+    </fieldset>
+    <br>
+    <legend><strong>Any other improvments not listed:</strong></legend>
+        <textarea name="Comments" id="Comments" cols="60" rows="3"></textarea>
+    </form>
+    <br>
+   <center><input type="submit" value="Submit" id="submit"> <input type="reset" id="reset"></center>
+</div>
+</body>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+    
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
+</html>
