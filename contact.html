@@ -63,8 +63,9 @@ border: medium solid black;
   <div class="w3-row  column-padding column padding-left">
     <div class="w3-container ">
       <a href="travel.html" class="hobby-heading" >Send me a message</h1></a>
-      <p>If you want to write me a brief message, please fill out the form provided or visit my LinkedIn and Facebook page.</p>
-<!-- Extra Element-->
+      <p>If you want to write me a brief message, please send me an <a href="mailto: marcus.diaz1994@gmail.com" target="_blank">email</a>, fill out the form provided, or visit my LinkedIn and Facebook page.</p>
+<br>
+  <!-- Extra Element-->
       <a href="https://www.linkedin.com/in/marcus-diaz-29901714a/" target="_blank">
           <img src="linkedin.png" alt="linkedin" style="width: 40px; height: 40px;">
       </a>
@@ -74,7 +75,34 @@ border: medium solid black;
     </a>
     </div>
   </div>
+  <p style="padding: 20px;"> Please fill out my <a href="survey.html" target="_blank"> survey</a> to help me improve my Web Page!
+      
+  </p>
 </div>
-
 </body>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
 </html>

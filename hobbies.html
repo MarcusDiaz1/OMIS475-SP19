@@ -40,20 +40,43 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: 'Times New Roman', Times, serif}
   <div class="w3-row w3-padding-64 column-padding column padding-left">
     <div class=" w3-container">
       <a href="sport.html" class="hobby-heading">Sports</h1></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>In my free time I love to play different sports, depending which season it is. During the summer time I play baseball in a men’s recreational summer league called the Latina American League and I also like to golf on the weekends when I have time. During the winter I participate in a men’s recreational basketball league and I also bowl in a Friday night league with my brothers and dad. I stay very active playing sports because it is a great way to relieve stress and it helps keep my body active.  </p>
     </div>
   </div>
 
-  <div class="w3-row w3-padding-64 column-padding column padding-left">
+  <div class="w3-row w3-padding-64 column-padding column padding-left ">
     <div class="w3-container ">
       <a href="travel.html" class="hobby-heading">Traveling</h1></a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Whenever I get the chance, I love to travel anywhere I get the opportunity. Within the last year I have traveled around the US and got to see different aspects of America that I am not accustomed to seeing. Traveling is a great way to get the full experiences of life while all learning about yourself. In the future, I plan on traveling outside of the US so that I can experience different cultures that I cannot see here in America. </p>
     </div>
 
   </div>
 </div>
 
 </body>
+
+<script>
+  // Get the Sidebar
+  var mySidebar = document.getElementById("mySidebar");
+  
+  // Get the DIV with overlay effect
+  var overlayBg = document.getElementById("myOverlay");
+  
+  // Toggle between showing and hiding the sidebar, and add overlay effect
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+      overlayBg.style.display = "none";
+    } else {
+      mySidebar.style.display = 'block';
+      overlayBg.style.display = "block";
+    }
+  }
+  
+  // Close the sidebar with the close button
+  function w3_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+  }
+  </script>
 </html>

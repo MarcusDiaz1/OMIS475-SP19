@@ -48,6 +48,7 @@ h2  {   padding-left: 15px
 #ref { align-items: right;}
 
 </style>
+
 <body>
 
 <!-- Navbar -->
@@ -213,9 +214,34 @@ h2  {   padding-left: 15px
 					<input type="button" value="Print this page" onClick="window.print()">
 				</form>
 				<br>
-			<form method="" action="reference.html">
-				<button type="submit">Reference Page</button>
+			<form method="" action="reference.html" target="_blank">
+				<button type="submit" >Reference Page</button>
 			</form>
 		</div>
 </footer>
+
+<script>
+	// Get the Sidebar
+	var mySidebar = document.getElementById("mySidebar");
+	
+	// Get the DIV with overlay effect
+	var overlayBg = document.getElementById("myOverlay");
+	
+	// Toggle between showing and hiding the sidebar, and add overlay effect
+	function w3_open() {
+		if (mySidebar.style.display === 'block') {
+			mySidebar.style.display = 'none';
+			overlayBg.style.display = "none";
+		} else {
+			mySidebar.style.display = 'block';
+			overlayBg.style.display = "block";
+		}
+	}
+	
+	// Close the sidebar with the close button
+	function w3_close() {
+		mySidebar.style.display = "none";
+		overlayBg.style.display = "none";
+	}
+	</script>
 </html>
